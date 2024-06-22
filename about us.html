@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>about one africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+
+        .navbar {
+            background-color: darkblue;
+            display: flex;
+            justify-content: center; /* Align items horizontally at the center */
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+        }
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        .menu li a:hover {
+            background-color: darkgreen ;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+
+        .card {
+            max-width: 300px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+            .bg-image {
+                position: relative;
+                width: 100%;
+                height: 150px;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .mask {
+                    background-color: rgba(251, 251, 251, 0.15);
+                }
+            }
+
+            .card-body {
+                padding: 15px;
+                text-align: center;
+
+                .card-title {
+                    font-size: 1.25em;
+                    margin-bottom: 10px;
+                }
+
+                .card-text {
+                    font-size: 0.875em;
+                    margin-bottom: 15px;
+                }
+
+                .btn {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    font-size: 0.875em;
+                    color: #fff;
+                    background-color: #007bff;
+                    border: none;
+                    border-radius: 4px;
+                    text-decoration: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        background-color: #0056b3;
+                    }
+                }
+            }
+        }
+
+        .card:hover {
+            background-color: rgba(128, 128, 128, 0.2);
+        }
+
+    </style>
+
+</head>
+<body>
+
+<nav class="navbar" style="background-color: whitesmoke; color: black; position: fixed ; width: 100%">
+    <ul class="menu" id="menu" style="align-content: center ; ">
+        <li><a href="index.html"><i class="fas fa-home icon"></i> Home</a></li>
+        <li><a href="about%20us.html"><i class="fas fa-info-circle icon"></i> About</a></li>
+        <li><a href="services.html"><i class="fas fa-concierge-bell icon"></i> Services</a></li>
+        <li><a href="projects.html"><i class="fas fa-project-diagram icon"></i> Projects</a></li>
+        <li><a href="news.html"><i class="fas fa-newspaper icon"></i> News &amp; Insights</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope icon"></i> Contact</a></li>
+    </ul>
+</nav>
+
+<section style="padding: 40px; display: flex; align-items: center; margin: 0 auto;">
+
+    <div style="max-width: 600px; padding: 12px">
+        <div style="max-width: 1700px; padding: 20px; text-align: center; background-color: rgba(128, 128, 128, 0.1); border-radius: 8px;">
+            <h1 style="color: darkgreen; font-size: 2em;"><b>AFRICA YOU CAN RELY ON</b></h1>
+            <div style="margin: 20px 0;">
+                <h2 style="font-size: 1.5em; margin: 0;"><B>Mission</B></h2>
+                <p style="margin-top: 10px;">To empower African communities and drive sustainable development by delivering
+                    innovative, impactful solutions across multiple sectors, fostering capacity building, and
+                    providing expert advisory services that support economic growth and environmental
+                    sustainability.<br>
+                </p>
+            </div>
+            <div style="margin: 20px 0;">
+                <h2 style="font-size: 1.5em; margin: 0;"><B>Vision</B></h2>
+                <p style="margin-top: 10px;">To be the leading catalyst for sustainable development in Africa, leveraging interdisciplinary
+                    expertise to overcome challenges and promote inclusive growth, ensuring a prosperous future
+                    for all.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+        <img src="WhatsApp%20Image%202024-06-06%20at%2007.42.01.jpeg" class="img-fluid" style="height: 450px; width: 400px; display: block;"/>
+        <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </a>
+    </div>
+</section>
+
+
+
+<footer class="text-center text-lg-start bg-body-tertiary text-muted" style="background-color: darkgreen ; color: white ; bottom: 0; left: 0; width: 100%; z-index: 1030;">
+
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style=" color: white">
+
+        <!-- Right -->
+        <div class="container p-4 pb-0" style="height: 5px">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                        data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #3b5998;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a
+                        data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #55acee;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a      data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #dd4b39;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a
+                        data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #ac2bac;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a
+                        data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #0082ca;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <!-- Github -->
+                <a
+                        data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #333333;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-github"></i
+                ></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="" style=" color: white">
+        <div class="container text-center text-md-start mt-5" style=" color: white">
+            <!-- Grid row -->
+            <div class="row mt-3" style=" color: white">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style=" color: white">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4" style=" color: white">
+                        <i class="fas fa-gem me-3"></i>ONE AFRICA
+                    </h6>
+                    <p>
+                        To empower African communities and drive sustainable development by delivering
+                        innovative, impactful solutions across multiple sectors, fostering capacity building, and
+                        providing expert advisory services that support economic growth and environmental
+                        sustainability.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style=" color: white">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4" style=" color: white">
+                        Products
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Angular</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">React</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Vue</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Laravel</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style=" color: white">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful links
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style=" color: white">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+</footer>
+<!-- Footer -->
+
+    <script>
+        // Initialization for ES Users
+        import { Ripple, initMDB } from "mdb-ui-kit";
+
+        initMDB({ Ripple });
+    </script>
+</body>
+</html>

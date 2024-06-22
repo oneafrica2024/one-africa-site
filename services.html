@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>services one africa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+    <style>
+        .navbar {
+            background-color: darkblue;
+            display: flex;
+            justify-content: center; /* Align items horizontally at the center */
+            padding: 10px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 2;
+        }
+        .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            margin-right: 20px;
+        }
+
+        .menu li a {
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        .menu li a:hover {
+            background-color: darkgreen ;
+            border-radius: 5px;
+            transform: scale(1.1);
+        }
+
+        .icon {
+            margin-right: 10px;
+        }
+
+        .card {
+            max-width: 300px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, z-index 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.2);
+            z-index: 1; /* Bring the hovered card to the front */
+            background-color: rgba(128, 128, 128, 0.2);
+        }
+
+        .bg-image {
+            position: relative;
+            width: 100%;
+            height: 150px;
+            overflow: hidden;
+        }
+
+        .bg-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .mask {
+            background-color: rgba(251, 251, 251, 0.15);
+        }
+
+        .card-body {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .card-title {
+            font-size: 1.25em;
+            margin-bottom: 10px;
+            color: darkgreen;
+        }
+
+        .card-text {
+            font-size: 0.875em;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 0.875em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+
+</head>
+<body>
+
+<nav class="navbar" style="background-color: whitesmoke; color: black; position: fixed ; width: 100%">
+    <ul class="menu" id="menu" style="align-content: center ; ">
+        <li><a href="index.html"><i class="fas fa-home icon"></i> Home</a></li>
+        <li><a href="about%20us.html"><i class="fas fa-info-circle icon"></i> About</a></li>
+        <li><a href="services.html"><i class="fas fa-concierge-bell icon"></i> Services</a></li>
+        <li><a href="projects.html"><i class="fas fa-project-diagram icon"></i> Projects</a></li>
+        <li><a href="news.html"><i class="fas fa-newspaper icon"></i> News &amp; Insights</a></li>
+        <li><a href="contact.html"><i class="fas fa-envelope icon"></i> Contact</a></li>
+    </ul>
+</nav>
+
+<section style="padding: 40px">
+
+    <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+        <img src="WhatsApp%20Image%202024-06-06%20at%2007.42.01.jpeg" class="img-fluid" style="height: 300px; width: 300px; margin: 20px auto; display: block;"/>
+        <a href="#!">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+        </a>
+    </div>
+
+    <div style="max-width: 1700px; margin: 50px auto; padding: 20px; text-align: center; background-color: rgba(128, 128, 128, 0.1); border-radius: 8px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+
+        <!-- Project Implementation Card -->
+        <div class="card"   style="max-width: 300px;height: 400px; margin: 20px auto; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+
+            <div class="card-body" id="project-implementation">
+                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background Circle -->
+                    <circle cx="50" cy="50" r="45" stroke="#1E90FF" stroke-width="5" fill="white"/>
+                    <!-- Gear Icon -->
+                    <path d="M50 30a20 20 0 1 0 0 40 20 20 0 1 0 0-40zm1 3v4.1c1.3.2 2.5.6 3.6 1.2l3.3-2.4 2.1 2.1-2.4 3.3c.6 1.1 1 2.3 1.2 3.6H67v3h-4.1c-.2 1.3-.6 2.5-1.2 3.6l2.4 3.3-2.1 2.1-3.3-2.4c-1.1.6-2.3 1-3.6 1.2V67h-3v-4.1c-1.3-.2-2.5-.6-3.6-1.2l-3.3 2.4-2.1-2.1 2.4-3.3c-.6-1.1-1-2.3-1.2-3.6H33v-3h4.1c.2-1.3.6-2.5 1.2-3.6l-2.4-3.3 2.1-2.1 3.3 2.4c1.1-.6 2.3-1 3.6-1.2V33h3zm-1.5 8a12 12 0 1 1 0 24 12 12 0 1 1 0-24z" fill="#1E90FF"/>
+                    <!-- Checkmark Icon -->
+                    <path d="M45 50l5 5 10-10" stroke="#32CD32" stroke-width="4" fill="none"/>
+                </svg>
+
+                <h5 class="card-title text-green-500 font-bold" style="color: darkgreen; font-size: 1.25em; margin-bottom: 10px;"><b>Project Implementation</b></h5>
+                <p class="card-text" style="font-size: 0.875em; margin-bottom: 15px;">We design, manage, and execute development projects across key sectors such as transport, energy, environment, and water. Our comprehensive approach ensures that each project is tailored to meet the specific needs of the community, optimizing resource use and achieving sustainable outcomes.</p>
+                <a href="#!" class="btn btn-primary data-mdb-ripple-init" style="background-color: orangered; padding: 10px 20px; font-size: 0.875em; border: none; border-radius: 4px; text-decoration: none; color: white;">Button</a>
+            </div>
+
+        </div>
+        <!-- Capacity Building Card -->
+        <div class="card"  style="max-width: 300px; margin: 20px auto; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <div class="card-body" id="capacity-building">
+
+                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background Circle -->
+                    <circle cx="50" cy="50" r="45" stroke="#FFA500" stroke-width="5" fill="white"/>
+                    <!-- Book Icon -->
+                    <path d="M30 35h40v30H30z" fill="#1E90FF"/>
+                    <!-- Arrow Icon -->
+                    <path d="M50 25l10 10h-7v20h-6V35h-7z" fill="#FFA500"/>
+                    <!-- People Icons -->
+                    <circle cx="35" cy="70" r="5" fill="#1E90FF"/>
+                    <circle cx="50" cy="70" r="5" fill="#1E90FF"/>
+                    <circle cx="65" cy="70" r="5" fill="#1E90FF"/>
+                </svg>
+
+                <h5 class="card-title text-green-500 font-bold" style="color: darkgreen; font-size: 1.25em; margin-bottom: 10px;"><b>Capacity Building</b></h5>
+                <p class="card-text" style="font-size: 0.875em; margin-bottom: 15px;">Our training programs and empowerment initiatives are aimed at enhancing the skills and capabilities of local communities and institutions. We focus on creating a knowledgeable and skilled workforce that can sustain development projects and drive future growth.</p>
+                <a href="#!" class="btn btn-primary data-mdb-ripple-init" style="background-color: orangered; padding: 10px 20px; font-size: 0.875em; border: none; border-radius: 4px; text-decoration: none; color: white;">Button</a>
+            </div>
+
+        </div>
+
+        <!-- Advisory Services Card -->
+        <div class="card" style="max-width: 300px; margin: 20px auto; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <div class="card-body" id="advisory-services" >
+                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background Circle -->
+                    <circle cx="50" cy="50" r="45" stroke="#1E90FF" stroke-width="5" fill="white"/>
+                    <!-- Light Bulb Icon -->
+                    <path d="M50 25a15 15 0 0 0-15 15c0 6.6 4.1 12.3 10 14.4V60h10v-5.6c5.9-2.1 10-7.8 10-14.4a15 15 0 0 0-15-15zm0 5a10 10 0 0 1 10 10c0 4.2-2.7 7.8-6.5 9.2l-.5.2V50h-7v-.6c-3.8-1.4-6.5-5-6.5-9.2a10 10 0 0 1 10-10z" fill="#FFD700"/>
+                    <!-- Chat Bubble Icon -->
+                    <path d="M50 40h-20v20h10l5 5 5-5h10V40H50zm0 10h-10v-5h10v5z" fill="#1E90FF"/>
+                    <!-- Checkmark Icon -->
+                    <path d="M45 60l5 5 10-10" stroke="#32CD32" stroke-width="4" fill="none"/>
+                </svg>
+
+                <h5 class="card-title text-green-500 font-bold" style="color: darkgreen; font-size: 1.25em; margin-bottom: 10px;"><b>Advisory Services</b></h5>
+                <p class="card-text" style="font-size: 0.875em; margin-bottom: 15px;">We provide expert technical advice and policy recommendations to governments and organizations. Our team of specialists delivers strategic insights and solutions that help shape effective policies and drive impactful decisions.</p>
+                <a href="#!" class="btn btn-primary data-mdb-ripple-init" style="background-color: orangered; padding: 10px 20px; font-size: 0.875em; border: none; border-radius: 4px; text-decoration: none; color: white;">Button</a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div style="max-width: 1700px; margin: 50px auto; padding: 20px; text-align: center; background-color: rgba(128, 128, 128, 0.1); border-radius: 8px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;">
+
+        <!-- Monitoring and Evaluation Card -->
+        <div class="card"  style="max-width: 300px; margin: 20px auto; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <div class="card-body" id="monitoring-and-evaluation">
+                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background Circle -->
+                    <circle cx="50" cy="50" r="45" stroke="#1E90FF" stroke-width="5" fill="white"/>
+                    <!-- Magnifying Glass -->
+                    <circle cx="40" cy="40" r="12" stroke="#1E90FF" stroke-width="4" fill="none"/>
+                    <line x1="48" y1="48" x2="60" y2="60" stroke="#1E90FF" stroke-width="4"/>
+                    <!-- Bar Chart -->
+                    <rect x="65" y="50" width="6" height="15" fill="#32CD32"/>
+                    <rect x="75" y="45" width="6" height="20" fill="#32CD32"/>
+                    <rect x="85" y="40" width="6" height="25" fill="#32CD32"/>
+                    <!-- Checkmark Icon -->
+                    <path d="M40 55l5 5 10-10" stroke="#32CD32" stroke-width="4" fill="none"/>
+                </svg>
+
+                <h5 class="card-title text-green-500 font-bold" style="color: darkgreen; font-size: 1.25em; margin-bottom: 10px;"><b>Monitoring and Evaluation</b></h5>
+                <p class="card-text" style="font-size: 0.875em; margin-bottom: 15px;">Our robust monitoring and evaluation processes ensure that projects meet their objectives and deliver tangible benefits. We assess the impact of our initiatives, providing accountability and continuous improvement to enhance future projects.</p>
+                <a href="#!" class="btn btn-primary data-mdb-ripple-init" style="background-color: orangered; padding: 10px 20px; font-size: 0.875em; border: none; border-radius: 4px; text-decoration: none; color: white;">Button</a>
+            </div>
+
+        </div>
+
+        <!-- Research and Innovation Card -->
+        <div class="card"  style="max-width: 300px; margin: 20px auto; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <div class="card-body" id="research-and-innovation">
+                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background Circle -->
+                    <circle cx="50" cy="50" r="45" stroke="#FFA500" stroke-width="5" fill="white"/>
+                    <!-- Light Bulb Icon -->
+                    <path d="M50 20a15 15 0 0 0-15 15c0 6.6 4.1 12.3 10 14.4V60h10v-10.6c5.9-2.1 10-7.8 10-14.4a15 15 0 0 0-15-15zm0 5a10 10 0 0 1 10 10c0 4.2-2.7 7.8-6.5 9.2l-.5.2V50h-7v-.6c-3.8-1.4-6.5-5-6.5-9.2a10 10 0 0 1 10-10z" fill="#FFA500"/>
+                    <!-- Gear Icon -->
+                    <path d="M50 40a10 10 0 1 0 0 20 10 10 0 1 0 0-20zm1 3v2.1c1.3.2 2.5.6 3.6 1.2l2.3-1.7 1.4 1.4-1.7 2.3c.6 1.1 1 2.3 1.2 3.6H57v2h-2.1c-.2 1.3-.6 2.5-1.2 3.6l1.7 2.3-1.4 1.4-2.3-1.7c-1.1.6-2.3 1-3.6 1.2V57h-2v2.1c-1.3-.2-2.5-.6-3.6-1.2l-2.3 1.7-1.4-1.4 1.7-2.3c-.6-1.1-1-2.3-1.2-3.6H43v-2h2.1c.2-1.3.6-2.5 1.2-3.6l-1.7-2.3 1.4-1.4 2.3 1.7c1.1-.6 2.3-1 3.6-1.2V43h2zm-1.5 8a7.5 7.5 0 1 1 0 15 7.5 7.5 0 1 1 0-15z" fill="#1E90FF"/>
+                    <!-- Arrow Icon -->
+                    <path d="M65 35l-5 5h7v25h-6V45h-7z" fill="#FFA500"/>
+                </svg>
+
+                <h5 class="card-title text-green-500 font-bold" style="color: darkgreen; font-size: 1.25em; margin-bottom: 10px;"><b>Research and Innovation</b></h5>
+                <p class="card-text" style="font-size: 0.875em; margin-bottom: 15px;">We are at the forefront of developing new solutions and innovative approaches to address development challenges. Our initiatives include the development of Virtual Power Plants and strategies to promote e-mobility, driving sustainable development and economic growth across the continent.</p>
+                <a href="#!" class="btn btn-primary data-mdb-ripple-init" style="background-color: orangered; padding: 10px 20px; font-size: 0.875em; border: none; border-radius: 4px; text-decoration: none; color: white;">Button</a>
+            </div>
+
+        </div>
+
+        <!-- Strategic Focus Card -->
+        <div class="card" style="max-width: 300px; margin: 20px auto; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); text-align: center;">
+            <div class="card-body" id="strategic-focus">
+                <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Background Circle -->
+                    <circle cx="50" cy="50" r="45" stroke="#32CD32" stroke-width="5" fill="white"/>
+                    <!-- Target Icon -->
+                    <circle cx="50" cy="50" r="20" stroke="#1E90FF" stroke-width="4" fill="none"/>
+                    <circle cx="50" cy="50" r="10" stroke="#1E90FF" stroke-width="4" fill="none"/>
+                    <line x1="50" y1="30" x2="50" y2="70" stroke="#1E90FF" stroke-width="2"/>
+                    <line x1="30" y1="50" x2="70" y2="50" stroke="#1E90FF" stroke-width="2"/>
+                    <!-- Arrow Icon -->
+                    <path d="M50 20l5 5h-3v20h-4V25h-3z" fill="#1E90FF"/>
+                    <!-- Globe Icon -->
+                    <circle cx="50" cy="50" r="12" stroke="#32CD32" stroke-width="2" fill="none"/>
+                    <path d="M38 50a12 12 0 0 0 24 0" stroke="#32CD32" stroke-width="2" fill="none"/>
+                    <path d="M50 38a12 12 0 0 1 0 24" stroke="#32CD32" stroke-width="2" fill="none"/>
+                    <!-- EV Icon -->
+                    <rect x="40" y="58" width="20" height="10" fill="#1E90FF"/>
+                    <rect x="42" y="54" width="4" height="4" fill="#32CD32"/>
+                    <rect x="54" y="54" width="4" height="4" fill="#32CD32"/>
+                </svg>
+
+                <h5 class="card-title text-green-500 font-bold" style="color: darkgreen; font-size: 1.25em; margin-bottom: 10px;"><b>Strategic Focus</b></h5>
+                <p class="card-text" style="font-size: 0.875em; margin-bottom: 15px;">One-Africa is currently developing a comprehensive strategy to leverage interdisciplinary expertise for overcoming barriers and promoting the growth of e-mobility in Africa. This initiative aims to boost sustainable development and economic growth by integrating advanced technologies and innovative solutions to create a cleaner, more efficient transportation system across the continent.</p>
+                <a href="#!" class="btn btn-primary data-mdb-ripple-init" style="background-color: orangered; padding: 10px 20px; font-size: 0.875em; border: none; border-radius: 4px; text-decoration: none; color: white;">Button</a>
+            </div>
+
+        </div>
+    </div>
+
+
+</section>
+<section class="background-container">
+    <form action="/submit-request" method="post" style="background-color: rgba(128, 128, 128, 0.1); padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+
+        <section style="padding: 40px; max-width: 800px; margin: auto;">
+            <h2 style="text-align: center; margin-bottom: 20px;">Request Our Services</h2>
+            <form action="/submit-request" method="post" style="background-color: rgba(128, 128, 128, 0.1); padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 15px;">
+                    <div style="width: calc(50% - 10px);">
+                        <label for="name" style="display: block; font-size: 1.125em; margin-bottom: 5px;">
+                            <i class="fas fa-user" style="margin-right: 5px; color: green;"></i> Full Name
+                        </label>
+                        <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+                    <div style="width: calc(50% - 10px);">
+                        <label for="organization" style="display: block; font-size: 1.125em; margin-bottom: 5px;">
+                            <i class="fas fa-building" style="margin-right: 5px; color: green;"></i> Organization
+                        </label>
+                        <input type="text" id="organization" name="organization" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-bottom: 15px;">
+                    <div style="width: calc(50% - 10px);">
+                        <label for="email" style="display: block; font-size: 1.125em; margin-bottom: 5px;">
+                            <i class="fas fa-envelope" style="margin-right: 5px; color: green;"></i> Email Address
+                        </label>
+                        <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+                    <div style="width: calc(50% - 10px);">
+                        <label for="phone" style="display: block; font-size: 1.125em; margin-bottom: 5px;">
+                            <i class="fas fa-phone" style="margin-right: 5px; color: green;"></i> Phone Number
+                        </label>
+                        <input type="tel" id="phone" name="phone" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;">
+                    </div>
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <label for="message" style="display: block; font-size: 1.125em; margin-bottom: 5px;">
+                        <i class="fas fa-comments" style="margin-right: 5px; color: green;"></i> Additional Information
+                    </label>
+                    <textarea id="message" name="message" rows="5" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea>
+                </div>
+                <div style="text-align: center; width: 100%;">
+                    <button type="submit" class="btn btn-primary" style="background-color: orangered; padding: 10px 20px; font-size: 1em; border: none; border-radius: 4px; color: white;">
+                        Submit Request
+                    </button>
+                </div>
+            </form>
+        </section>
+    </form>
+</section>
+
+
+
+
+<footer class="text-center text-lg-start bg-body-tertiary text-muted" style="background-color: darkgreen ; color: white ; bottom: 0; left: 0; width: 100%; z-index: 1030;">
+
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom" style=" color: white">
+
+        <!-- Right -->
+        <div class="container p-4 pb-0" style="height: 10px">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a
+                        data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #3b5998;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-facebook-f"></i
+                ></a>
+
+                <!-- Twitter -->
+                <a
+                        data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #55acee;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Google -->
+                <a      data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #dd4b39;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-google"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a
+                        data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #ac2bac;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a
+                        data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #0082ca;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-linkedin-in"></i
+                ></a>
+                <!-- Github -->
+                <a
+                        data-mdb-ripple-init
+                        class="btn text-white btn-floating m-1"
+                        style="background-color: #333333;"
+                        href="#!"
+                        role="button"
+                ><i class="fab fa-github"></i
+                ></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="" style=" color: white">
+        <div class="container text-center text-md-start mt-5" style=" color: white">
+            <!-- Grid row -->
+            <div class="row mt-3" style=" color: white">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style=" color: white">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4" style=" color: white">
+                        <i class="fas fa-gem me-3"></i>ONE AFRICA
+                    </h6>
+                    <p>
+                        To empower African communities and drive sustainable development by delivering
+                        innovative, impactful solutions across multiple sectors, fostering capacity building, and
+                        providing expert advisory services that support economic growth and environmental
+                        sustainability.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style=" color: white">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4" style=" color: white">
+                        Products
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Angular</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">React</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Vue</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Laravel</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4" style=" color: white">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful links
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4" style=" color: white">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
